@@ -1,0 +1,1 @@
+!function(){"use strict";[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')).forEach(function(o){new bootstrap.Tooltip(o)})}();
