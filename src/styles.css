@@ -26,7 +26,7 @@ h3 {
 }
 
 code {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'BebasNeue', cursive;
     font-size: large;
     letter-spacing: 2.5px;
     color: #9fef00;
@@ -39,4 +39,38 @@ a {
 
 a:hover {
     color: #9fef00;
+}
+
+.window_dot {
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 12px;
+    margin-right: 10px;
+    width: 12px
+}
+
+.window_title {
+    display: inline-block;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%)
+}
+
+.window_container {
+    border: 3px solid #1a2332;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 20px 0 30px
+}
+
+.window_top {
+    background: #1a2332;
+    box-sizing: border-box;
+    padding: 5px
+}
+
+.window_content {
+    margin: 0;
+    padding: 0
 }
