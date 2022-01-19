@@ -1,0 +1,29 @@
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+    <div class="container">
+        <div class="row">
+            <h1 class="mt-5">Pattern Create</h1>
+            <hr>
+            <p class="lead">
+                This script will generate a string composed of <code>unique patterns</code> that we can use to replace our sequence of ‘A’s.
+            </p>
+        </div>
+        <br><br>
+        <div class="row">
+            <form>
+                <div class="mb-3">
+                    <label for="bufferSize" class="form-label">Buffer size</label>
+                    <input type="number" class="form-control" id="buffer-size" #bufferSize>
+                </div>
+                <button (click)="generatePattern(bufferSize.value)" class="btn btn-primary">Generate</button>
+            </form>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="mb-3">
+                <label for="generated-pattern" class="form-label">Pattern</label>
+                <textarea class="form-control" id="generated-pattern" rows="15" disabled>{{ pattern }}</textarea>
+            </div>
+        </div>
+    </div>
+</main>
