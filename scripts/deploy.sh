@@ -1,12 +1,11 @@
 #!/bin/bash
 
-APP_VERSION=$(cat index.html | grep app-title | cut -d'.' -f 2)
-APP_VERSION=$(($APP_VERSION + 1))
+APP_VERSION_OLD=$(cat src/index.html | grep app-title | cut -d'.' -f 2)
+APP_VERSION=$(($APP_VERSION_OLD + 1))
+echo "App Version $APP_VERSION"
 
-echo "App Version"
-echo $APP_VERSION
-
-ng build --prod --output-path docs --base-href="https://crysthofferattier.github.io/" \
+sed -i "s/v0.$APP_VERSION_OLD/v0.$APP_VERSION/" src/index.html \
+&& ng build --prod --output-path docs --base-href="https://crysthofferattier.github.io/" \
 && echo "$ ng build FINISHED" \
 && cp docs/index.html docs/404.html \
 && echo "404.html file created" \
