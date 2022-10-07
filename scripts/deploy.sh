@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# POOR App Version Management
 APP_VERSION_OLD=$(cat src/index.html | grep app-title | cut -d'.' -f 2)
 APP_VERSION=$(($APP_VERSION_OLD + 1))
 echo "App Version $APP_VERSION"
