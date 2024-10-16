@@ -15,7 +15,7 @@ export class ResistorCalculatorComponent {
   @ViewChild('multiplier') multiplier!: ElementRef;
   @ViewChild('tolerance') tolerance!: ElementRef;
   result = 0;
-  tMin = 0;
+  tMin = 0; // tolerance max
   tMax = 0;
 
   constructor() { }
