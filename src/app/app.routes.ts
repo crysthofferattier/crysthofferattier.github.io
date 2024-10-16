@@ -5,7 +5,8 @@ import { ToolsComponent } from './tools/tools.component';
 import { HomeComponent } from './home/home.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent },
     { path: 'tools', component: ToolsComponent },
     { path: 'tools/resistor-calculator', component: ResistorCalculatorComponent }
 ];
