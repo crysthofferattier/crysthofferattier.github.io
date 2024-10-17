@@ -1,0 +1,41 @@
+.example {
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.circuit {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.battery {
+    width: 50px;
+    height: 20px;
+    background-color: #f39c12;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.resistor {
+    width: 30px;
+    height: 20px;
+    background-color: #3498db;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: black;
+}
