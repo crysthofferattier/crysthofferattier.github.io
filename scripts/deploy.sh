@@ -8,4 +8,5 @@ echo "App Version $APP_VERSION"
 sed -i "s/v0.$APP_VERSION_OLD/v0.$APP_VERSION/" src/index.html \
 && ng build --verbose --output-path=docs/ --base-href="http://crysthofferattier.github.io/" \
 && echo "$ ng build FINISHED" \
+&& cp ../src/index.html docs/404.html \
 && git add . && git commit -m "Production version `date +'%Y-%m-%d %H:%M:%S'`" && git push -u origin main
