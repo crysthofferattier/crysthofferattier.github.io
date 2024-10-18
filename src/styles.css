@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@import url('https://fonts.cdnfonts.com/css/jetbrains-mono');
+/* @import url('https://fonts.cdnfonts.com/css/jetbrains-mono');
+font-family: 'JetBrains Mono',
+sans-serif; */
 
 /* @font-face {
     font-family: JetBrainsMono-Regular;
@@ -11,7 +13,7 @@
 body {
     background-color: #141d2b;
     color: #a4b1cd;
-    font-family: 'JetBrains Mono', sans-serif;
+    
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.5;
