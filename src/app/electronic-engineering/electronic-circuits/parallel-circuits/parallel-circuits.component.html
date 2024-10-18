@@ -1,0 +1,228 @@
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+    <div class="container">
+        <div class="row">
+            <h1 class="mt-5">Parallel Circuit</h1>
+            <hr>
+            <p class="lead">
+                A parallel circuit is a type of electrical circuit where multiple components are connected across the
+                same voltage
+                source. In a parallel configuration, each component has its own separate path for current to flow, which
+                means that if
+                one component fails or is removed, the others continue to operate. This characteristic makes parallel
+                circuits widely
+                used in household wiring and electronic devices.
+            </p>
+            <h2 class="mt-5">Key Characteristics of Parallel Circuits</h2>
+            <p class="lead"><code>Same Voltage Across Components:</code> In a parallel circuit, all components share the
+                same voltage. For instance,
+                if you
+                connect three light bulbs in parallel to a 12-volt battery, each bulb receives 12 volts.
+            </p>
+
+            <p class="lead"><code>Current Division:</code>
+                The total current flowing from the source is divided among the parallel branches. The
+                amount of
+                current flowing through each branch depends on the resistance of the components in that branch.
+
+            </p>
+
+            <p class="lead"><code>Total Resistance Calculation:</code>
+                The total resistance in a parallel circuit is lower than the resistance of the
+                smallest branch. It can be calculated using the formula:
+            </p>
+            <br>
+            <code>
+                <div class="container" style="text-align: center; font-size: 200%;">
+                    <div class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="line"></span>
+                        <span class="denominator">R<sub>total</sub></span>
+                    </div>
+                    <span class="operator">=</span>
+                    <div class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="line"></span>
+                        <span class="denominator">R<sub>1</sub></span>
+                    </div>
+                    <span class="operator">+</span>
+                    <div class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="line"></span>
+                        <span class="denominator">R<sub>2</sub></span>
+                    </div>
+                    <span class="operator">+</span>
+                    <div class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="line"></span>
+                        <span class="denominator">R<sub>3</sub></span>
+                    </div>
+                    <span class="operator">+</span>
+                    <div class="fraction">
+                        <span class="numerator">...</span>
+                        <span class="line"></span>
+                        <span class="denominator">...</span>
+                    </div>
+                </div>            
+            </code>
+            <br>
+            <p class="lead">
+                Where R<sub>1</sub>,R<sub>2</sub>,R<sub>3</sub>, etc. are the resistances of each branch.
+            </p>
+            <h2 class="mt-5">Examples</h2>
+            <h3>Consider a Simple Parallel Circuit with Three Resistors:</h3>
+            <div class="container">
+                <ul style="font-size: large;">
+                    <li>
+                        <code><strong>R<sub>1</sub></strong></code><strong> = 6 ohms</strong>
+                    </li>
+                    <li>
+                        <code><strong>R<sub>2</sub></strong></code><strong> = 12 ohms</strong>
+                    </li>
+                    <li>
+                        <code><strong>R<sub>3</sub></strong></code><strong> = 24 ohms</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <h4>1. Voltage Across Resistors:</h4>
+            <p class="lead">All three resistors will have the <code>same voltage</code> of 12 volts across them.</p>
+        </div>
+        <div class="row">
+            <h4>2. Current Through Each Resistor:</h4>
+            <p class="lead">Using <code>Ohm’s Law (I = V/R)</code>, we can calculate the current through each resistor:
+            </p>
+            <div class="container">
+                <ul style="font-size: large;">
+                    <li><strong><code>For R<sub>1</sub></code>:</strong> I<sub>1</sub> = 12V / 6Ω = 2A</li>
+                    <li><strong><code>For R<sub>2</sub></code>:</strong> I<sub>2</sub> = 12V / 12Ω = 1A</li>
+                    <li><strong><code>For R<sub>3</sub></code>:</strong> I<sub>3</sub> = 12V / 24Ω = 0.5A</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <h4>3. Total Current:</h4>
+            <p class="lead">The total current flowing from the battery is the sum of the currents through each branch:
+            </p>
+            <code>
+                <div class="container" style="text-align: center; font-size: larger;">
+                    I<sub>total</sub> = I<sub>1</sub> + I<sub>2</sub> + I<sub>3</sub> = 2A + 1A + 0.5A = 3.5A
+                </div>
+            </code>
+        </div>
+        <br>
+        <div class="row">
+            <h4>4. Total Resistance:</h4>
+            <p class="lead">Total resistance is calculated as:</p>
+            <!-- <code>
+                <div class="container" style="text-align: center; font-size: larger;">
+                    1/R<sub>total</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub> + 1/R<sub>3</sub>
+                </div>
+            </code> -->
+            <code>
+                <div class="container" style="text-align: center; font-size: larger">                    
+                    <div class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="line"></span>
+                        <span class="denominator">R<sub>total</sub></span>
+                    </div>
+                    <span class="operator">=</span>
+                    <div class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="line"></span>
+                        <span class="denominator">6</span>
+                    </div>
+                    <span class="operator">+</span>
+                    <div class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="line"></span>
+                        <span class="denominator">12</span>
+                    </div>
+                    <span class="operator">+</span>
+                    <div class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="line"></span>
+                        <span class="denominator">24</span>
+                    </div>                    
+                </div>
+            </code>
+            <p class="lead">
+                Finding a common denominator (24):
+            </p>
+            <code>
+                            <div class="container" style="text-align: center; font-size: larger">                    
+                                <div class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="line"></span>
+                                    <span class="denominator">R<sub>total</sub></span>
+                                </div>
+                                <span class="operator">=</span>
+                                <div class="fraction">
+                                    <span class="numerator">4</span>
+                                    <span class="line"></span>
+                                    <span class="denominator">24</span>
+                                </div>
+                                <span class="operator">+</span>
+                                <div class="fraction">
+                                    <span class="numerator">2</span>
+                                    <span class="line"></span>
+                                    <span class="denominator">24</span>
+                                </div>
+                                <span class="operator">+</span>
+                                <div class="fraction">
+                                    <span class="numerator">7</span>
+                                    <span class="line"></span>
+                                    <span class="denominator">24</span>
+                                </div>                    
+                            </div>
+                        </code>
+            <p class="lead">
+                So,
+            </p>
+            <code>
+                <div class="container" style="text-align: center; font-size: larger">                    
+                    <div class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="line"></span>
+                        <span class="denominator">R<sub>total</sub></span>
+                    </div>
+                    <span class="operator">=</span>
+                    <div class="fraction">
+                        <span class="numerator">24</span>
+                        <span class="line"></span>
+                        <span class="denominator">7</span>
+                    </div>
+                    <span class="operator">≈</span>
+                    3.43
+                </div>
+            </code>            
+        </div>
+        <br>
+        <div class="row">
+            <h2>Advantages of Parallel Circuits</h2>
+            <div class="container">
+                <ul style="font-size: large;">
+                    <li><strong><code>Reliability:</code></strong> If one component fails, the others continue to
+                        function.</li>
+                    <li><strong><code>Equal Voltage:</code></strong> Each component receives the same voltage.</li>
+                    <li><strong><code>Flexible Design:</code></strong> Easy to add or remove components.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+
+            <h2>Common Applications of Parallel Circuits</h2>
+            <div class="container">
+                <ul style="font-size: large;">
+                    <li><strong><code>Home Electrical Wiring:</code></strong> Most outlets are wired in parallel.</li>
+                    <li><strong><code>Lighting Systems:</code></strong> Ceiling lights often use parallel circuits.</li>
+                    <li><strong><code>Electronic Devices:</code></strong> Many circuits in devices like computers and
+                        smartphones use
+                        parallel
+                        configurations.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>

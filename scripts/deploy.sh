@@ -10,3 +10,5 @@ sed -i "s/v0.$APP_VERSION_OLD/v0.$APP_VERSION/" src/index.html \
 && echo "$ ng build FINISHED" \
 && cp ../src/index.html docs/404.html \
 && git add . && git commit -m "Production version `date +'%Y-%m-%d %H:%M:%S'`" && git push -u origin main
+
+# ng deploy --repo=https://github.com/crysthofferattier/crysthofferattier.github.io.git --base-href=https://crysthofferattier.github.io/crysthofferattier.github.io``
