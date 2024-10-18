@@ -1,15 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@font-face {
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono');
+
+/* @font-face {
     font-family: JetBrainsMono-Regular;
     src: url("/assets/dist/fonts/JetBrainsMonoNL-Regular.ttf?c067c3378b127534853121326dac9098");
-}
+} */
 
 body {
     background-color: #141d2b;
     color: #a4b1cd;
-    font-family: 'JetBrainsMono-Regular', monospace;
+    font-family: 'JetBrains Mono', sans-serif;
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.5;
