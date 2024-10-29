@@ -7,6 +7,7 @@ import { OhmsLawComponent } from './electronic-engineering/electronic-circuits/o
 import { SeriesCircuitsComponent } from './electronic-engineering/electronic-circuits/series-circuits/series-circuits.component';
 import { IntroductionComponent } from './electronic-engineering/electronic-circuits/introduction/introduction.component';
 import { ParallelCircuitsComponent } from './electronic-engineering/electronic-circuits/parallel-circuits/parallel-circuits.component';
+import { SeriesParallelCircuitsComponent } from './electronic-engineering/electronic-circuits/series-parallel-circuits/series-parallel-circuits.component';
 OhmsLawComponent
 
 export const routes: Routes = [
@@ -42,5 +43,9 @@ export const routes: Routes = [
     {
         path: 'electronic-engineering/electronic-circuits/parallel-circuits',
         component: ParallelCircuitsComponent
-    },    
+    },
+    {
+        path: 'electronic-engineering/electronic-circuits/series-parallel-circuits',
+        component: SeriesParallelCircuitsComponent
+    },
 ];

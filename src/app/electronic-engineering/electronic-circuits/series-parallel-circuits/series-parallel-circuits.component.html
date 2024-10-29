@@ -1,0 +1,365 @@
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+    <div class="container">
+        <div class="row">
+            <h1>Series-Parallel Circuit Combination</h1>
+            <hr>
+            <p class="lead">
+                Series-parallel circuits combine elements of both
+                <code><a
+                                href="http://localhost:4200/electronic-engineering/electronic-circuits/series-circuits">series</a></code>
+                and
+                <code><a
+                                href="http://localhost:4200/electronic-engineering/electronic-circuits/parallel-circuits">parallel</a></code>
+                configurations, creating more complex networks of
+                resistors (or other components).
+            </p>
+        </div>
+        <div class="row">
+            <h2>Definitions</h2>
+            <p class="lead"><code>Series Circuit: </code>In a series circuit, components are connected end-to-end, so
+                the
+                same current flows through all
+                components. The total resistance (R<sub>total</sub>) is the sum of the individual resistances:
+            </p>
+            <code>
+            <div class="container" style="text-align: center; font-size: larger;">
+                R<sub>total</sub> = R<sub>1</sub>+R<sub>2</sub>+R<sub>3</sub>+…+R<sub>n</sub>
+            </div>
+            </code>
+            <p class="lead">
+                The total voltage (V<sub>total</sub>) is the sum of the individual voltage drops across each component.
+            </p>
+            <p class="lead">
+                <code>Parallel Circuit:</code> In a parallel circuit, components are connected across the same two
+                points, meaning each component
+                experiences the same voltage. The total resistance can be calculated using the formula:
+            </p>
+            <code>
+                <div class="container" style="text-align: center; font-size: larger;">
+                    <div class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="line"></span>
+                        <span class="denominator">R<sub>total</sub></span>
+                    </div>
+                    <span class="operator">=</span>
+                    <div class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="line"></span>
+                        <span class="denominator">R<sub>1</sub></span>
+                    </div>
+                    <span class="operator">+</span>
+                    <div class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="line"></span>
+                        <span class="denominator">R<sub>2</sub></span>
+                    </div>
+                    <span class="operator">+</span>
+                    <div class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="line"></span>
+                        <span class="denominator">R<sub>3</sub></span>
+                    </div>
+                    <span class="operator">+</span>
+                    <div class="fraction">
+                        <span class="numerator">...</span>
+                        <span class="line"></span>
+                        <span class="denominator">...</span>
+                    </div>
+                </div>
+            </code>
+            <p class="lead">
+                The total current (I<sub>total</sub>) is the sum of the currents through each component.
+            </p>
+        </div>
+        <div class="row">
+            <h2>Series-Parallel Circuits</h2>
+            <p class="lead">
+                A series-parallel circuit contains both series and parallel connections. This allows for more complex
+                designs
+                and can be
+                used to achieve specific electrical characteristics, such as desired resistance values and voltage
+                distribution.
+            </p>
+        </div>
+        <div class="row">
+            <h3>Examples of Series-Parallel Circuits</h3>
+            <p class="lead">
+                Consider a Simple Parallel Circuit with Three Resistors:
+            </p>
+            <img src="/series-parallel-circuits-example-1.png" style="height: auto; width: auto;">
+            <div class="container">
+                <ul style="font-size: large;">
+                    <li>
+                        <code><strong>R<sub>1</sub></strong></code><strong> = 4 Ω (in series with the parallel
+                            combination)</strong>
+                    </li>
+                    <li>
+                        <code><strong>R<sub>2</sub></strong></code><strong> = 6 Ω</strong>
+                    </li>
+                    <li>
+                        <code><strong>R<sub>3</sub></strong></code><strong> = 12 Ω</strong>
+                    </li>
+                </ul>
+            </div>
+            <p class="lead">
+                The configuration is as follows:
+            </p>
+            <div class="container">
+                <ul style="font-size: large;">
+                    <li>
+                        <code><strong>R<sub>1</sub></strong></code>
+                        <strong>
+                            is in series with a parallel combination of <code><strong>R<sub>2</sub></strong></code> and
+                            <code><strong>R<sub>3</sub></strong></code>
+                        </strong>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <h3>Steps to Analyze:</h3>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <p class="lead">
+                                Calculate <code><strong>R<sub>2,3</sub></strong></code>​ (the equivalent resistance of
+                                <code><strong>R<sub>2</sub></strong></code> and
+                                <code><strong>R<sub>3</sub></strong></code>):
+                            </p>
+                        </li>
+                    </ul>
+                    <code>
+                                    <div style="text-align: center; font-size: larger">                    
+                                        <div class="fraction">
+                                            <span class="numerator">1</span>
+                                            <span class="line"></span>
+                                            <span class="denominator">R<sub>2,3</sub></span>
+                                        </div>
+                                        <span class="operator">=</span>
+                                        <div class="fraction">
+                                            <span class="numerator">1</span>
+                                            <span class="line"></span>
+                                            <span class="denominator">6</span>
+                                        </div>
+                                        <span class="operator">+</span>
+                                        <div class="fraction">
+                                            <span class="numerator">1</span>
+                                            <span class="line"></span>
+                                            <span class="denominator">12</span>
+                                        </div>
+                                        <span class="operator">=</span>
+                                        <div class="fraction">
+                                            <span class="numerator">2+1</span>
+                                            <span class="line"></span>
+                                            <span class="denominator">12</span>
+                                        </div>
+                                        <span class="operator">=</span>
+                                        <div class="fraction">
+                                            <span class="numerator">3</span>
+                                            <span class="line"></span>
+                                            <span class="denominator">12</span>
+                                        </div>                    
+                                    </div>
+                                </code>
+                    <ul style="font-size: large;">
+                        <li>
+                            <code><strong>R<sub>2,3</sub></strong></code>
+                            =
+                            <strong>
+                                4 Ω
+                            </strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <p class="lead">
+                                Total Resistance <code><strong>R<sub>total</sub></strong></code>:
+                            </p>
+                        </li>
+                    </ul>
+                    <code>
+                                    <div style="text-align: center; font-size: larger">
+                                        R<sub>total</sub> = R<sub>1</sub> + R<sub>2,3</sub> = 4 + 4 = 8 Ω
+                                    </div>
+                                </code>
+
+                </div>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <p class="lead">
+                                Voltage and Current Calculations: If <code>V<sub>total</sub>=12V</code> is applied
+                            </p>
+                            <ul>
+                                <li>The total current (I<sub>total</sub>):</li>
+                            </ul>
+                            <code>
+                                                            <div style="text-align: center; font-size: larger">                    
+                                                                <div class="fraction">
+                                                                    <span class="numerator">V<sub>total</sub></span>
+                                                                    <span class="line"></span>
+                                                                    <span class="denominator">R<sub>total</sub></span>
+                                                                </div>
+                                                                <span class="operator">=</span>
+                                                                <div class="fraction">
+                                                                    <span class="numerator">12</span>
+                                                                    <span class="line"></span>
+                                                                    <span class="denominator">8</span>
+                                                                </div>                                              
+                                                            </div>
+                                                        </code>
+                            <code>
+                                <div style="text-align: center; font-size: larger">
+                                    I<sub>total</sub> =1.5 A
+                                </div>
+                            </code>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <p class="lead">
+                                Voltage Drop Across <code>R<sub>1</sub></code>:
+                            </p>
+                        </li>
+                        <code>
+                            <div style="text-align: center; font-size: larger">
+                                V<sub>R1</sub>
+                                =
+                                I<sub>Total</sub>
+                                x
+                                R<sub>1</sub>
+                            </div>
+                        </code>
+                        <code>
+                            <div style="text-align: center; font-size: larger">
+                                V<sub>R1</sub>
+                                =
+                                1.5
+                                x
+                                4
+                            </div>
+                        </code>
+                        <code>
+                            <div style="text-align: center; font-size: larger">
+                                V<sub>R1</sub>
+                                =
+                                6V
+                            </div>
+                        </code>
+                    </ul>
+                </div>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <p class="lead">
+                                Voltage Across the Parallel Combination:
+                            </p>
+                        </li>
+                        <code>
+                                                            <div style="text-align: center; font-size: larger">
+                                                                V<sub>2,3</sub>
+                                                                =
+                                                                V<sub>Total</sub>
+                                                                -
+                                                                V<sub>R1</sub>
+                                                            </div>
+                                                        </code>
+                        <code>
+                                                            <div style="text-align: center; font-size: larger">
+                                                                V<sub>2,3</sub>
+                                                                =
+                                                               12-6
+                                                            </div>
+                                                        </code>
+                        <code>
+                                                            <div style="text-align: center; font-size: larger">
+                                                                V<sub>2,3</sub>
+                                                                =
+                                                                6V
+                                                            </div>
+                                                        </code>
+                    </ul>
+                </div>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <p class="lead">
+                                Current through R<sub>2</sub> and R<sub>3</sub>:
+                            </p>
+                        </li>
+                        <code>
+                            <div style="text-align: center; font-size: larger">
+                                I<sub>2</sub> =
+                                <div class="fraction">
+                                    <span class="numerator">V<sub>2,3</sub></span>
+                                    <span class="line"></span>
+                                    <span class="denominator">R<sub>2</sub></span>
+                                </div>
+                                <span class="operator">=</span>
+                                <div class="fraction">
+                                    <span class="numerator">6</span>
+                                    <span class="line"></span>
+                                    <span class="denominator">6</span>
+                                </div>
+                                <span class="operator">=</span>
+                                <div class="fraction">
+                                    <span class="numerator">1A</span>                                    
+                                </div>
+                                <br>
+                                I<sub>3</sub> =
+                                <div class="fraction">
+                                    <span class="numerator">V<sub>2,3</sub></span>
+                                    <span class="line"></span>
+                                    <span class="denominator">R<sub>3</sub></span>
+                                </div>
+                                <span class="operator">=</span>
+                                <div class="fraction">
+                                    <span class="numerator">6</span>
+                                    <span class="line"></span>
+                                    <span class="denominator">12</span>
+                                </div>
+                                <span class="operator">=</span>
+                                <div class="fraction">
+                                    <span class="numerator">0.5A</span>
+                                </div>
+                            </div>
+                        </code>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Characteristics of Series-Parallel Circuits</h3>
+            <ul>
+                <li>
+                    <p class="lead">
+                        <code>Voltage Division:</code> In a series connection, the voltage divides among the resistors
+                        based on their
+                        resistances.
+                    </p>
+                </li>
+                <li>
+                    <p class="lead">
+                        <code>Current Division:</code> In a parallel connection, the current divides among the branches
+                        based on
+                        their
+                        resistances; lower
+                        resistance gets a larger share of the total current.
+                    </p>
+                </li>
+                <li>
+                    <p class="lead">
+                        <code>Total Resistance:</code> The combined series and parallel configuration usually results in
+                        a total
+                        resistance that is less than
+                        the highest individual resistance in the network.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
