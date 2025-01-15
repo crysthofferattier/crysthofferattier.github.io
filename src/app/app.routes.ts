@@ -8,6 +8,7 @@ import { SeriesCircuitsComponent } from './electronic-engineering/electronic-cir
 import { IntroductionComponent } from './electronic-engineering/electronic-circuits/introduction/introduction.component';
 import { ParallelCircuitsComponent } from './electronic-engineering/electronic-circuits/parallel-circuits/parallel-circuits.component';
 import { SeriesParallelCircuitsComponent } from './electronic-engineering/electronic-circuits/series-parallel-circuits/series-parallel-circuits.component';
+import { PlcIntroductionComponent } from './home/programmable-logic-controller/plc-introduction/plc-introduction.component';
 OhmsLawComponent
 
 export const routes: Routes = [
@@ -19,6 +20,10 @@ export const routes: Routes = [
     {
         path: 'home',
         component: HomeComponent
+    },
+    {
+        path: 'home/programmable-logic-controller/introduction',
+        component: PlcIntroductionComponent
     },
     {
         path: 'tools',
