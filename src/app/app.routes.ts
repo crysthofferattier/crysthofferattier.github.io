@@ -9,6 +9,8 @@ import { IntroductionComponent } from './electronic-engineering/electronic-circu
 import { ParallelCircuitsComponent } from './electronic-engineering/electronic-circuits/parallel-circuits/parallel-circuits.component';
 import { SeriesParallelCircuitsComponent } from './electronic-engineering/electronic-circuits/series-parallel-circuits/series-parallel-circuits.component';
 import { PlcIntroductionComponent } from './home/programmable-logic-controller/plc-introduction/plc-introduction.component';
+import { LadderLogicComponent } from './home/programmable-logic-controller/ladder-logic/ladder-logic.component';
+import { RelaysAndContactsComponent } from './home/programmable-logic-controller/ladder-logic/basic-electrical-concepts/relays-and-contacts/relays-and-contacts.component';
 OhmsLawComponent
 
 export const routes: Routes = [
@@ -24,6 +26,14 @@ export const routes: Routes = [
     {
         path: 'home/programmable-logic-controller/introduction',
         component: PlcIntroductionComponent
+    },
+    {
+        path: 'home/programmable-logic-controller/ladder-logic',
+        component: LadderLogicComponent
+    },
+    {
+        path: 'home/programmable-logic-controller/ladder-logic/basic-electrical-concepts/relays-and-contacts',
+        component: RelaysAndContactsComponent
     },
     {
         path: 'tools',
