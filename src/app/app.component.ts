@@ -1,19 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
-import { ResistorCalculatorComponent } from './tools/resistor-calculator/resistor-calculator.component';
-import { ShortNumberPipe } from './pipes/short-number.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
     NavBarComponent,
-    ResistorCalculatorComponent,
-    ShortNumberPipe
+    ReactiveFormsModule,
+    CommonModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

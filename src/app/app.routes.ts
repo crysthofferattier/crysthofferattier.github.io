@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ResistorCalculatorComponent } from './tools/resistor-calculator/resistor-calculator.component';
 import { ToolsComponent } from './tools/tools.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +10,7 @@ import { SeriesParallelCircuitsComponent } from './electronic-engineering/electr
 import { PlcIntroductionComponent } from './home/programmable-logic-controller/plc-introduction/plc-introduction.component';
 import { LadderLogicComponent } from './home/programmable-logic-controller/ladder-logic/ladder-logic.component';
 import { RelaysAndContactsComponent } from './home/programmable-logic-controller/ladder-logic/basic-electrical-concepts/relays-and-contacts/relays-and-contacts.component';
+import { ResistanceComponent } from './tools/calculators/resistance/resistance.component';
 OhmsLawComponent
 
 export const routes: Routes = [
@@ -42,6 +42,10 @@ export const routes: Routes = [
     {
         path: 'tools/resistor-calculator',
         component: ResistorCalculatorComponent
+    },
+    {
+        path: 'tools/calculators/resistance',
+        component: ResistanceComponent
     },
     {
         path: 'electronic-engineering/electronic-circuits/introduction',

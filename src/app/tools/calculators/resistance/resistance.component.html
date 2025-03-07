@@ -1,0 +1,42 @@
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" formControlName="calculationOpt" value="1" checked>
+          <label class="form-check-label">Resistor in Series</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" formControlName="calculationOpt" value="2">
+          <label class="form-check-label">Resistor in Parallel</label>
+        </div>
+        <div class="form-group col">
+          <label for="numResistors">Number of Resistors:</label>
+          <input id="numResistors" class="form-control" type="number" formControlName="numResistors"
+            (input)="updateInputs()" min="1" />
+        </div>
+        <!-- Dynamically Created Inputs -->
+        <div formArrayName="inputs">
+          <div *ngFor="let input of inputs.controls; let i = index">
+            <label for="input-{{ i }}">Resistor: R{{ i + 1 }}:</label>
+            <input id="input-{{ i }}" type="number" [formControlName]="i" class="form-control" />
+          </div>
+        </div>
+        <br />
+        <button type="submit" [disabled]="myForm.invalid" class="btn btn-primary">Submit</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="col">
+        <label style="font-size: large;">RESISTANCE</label>
+        <p style="font-size: 500%;">{{resistanceTotal}} Ω</p>
+      </div>
+    </div>
+  </div>
+</div>
